@@ -1,0 +1,128 @@
+@import "./base";
+
+nav {
+  @include tablet {
+    top: 0;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top: 2.3rem;
+  max-width: 100%;
+  width: 100%;
+  font-family: $ff-primary;
+  overflow: hidden;
+  z-index: 999;
+
+  .logo {
+    max-width: 100%;
+    margin: 0 2.6rem;
+
+    @include mobile {
+      align-self: flex-start;
+      margin: 2rem;
+    }
+  }
+
+  .separator-line {
+    @include tablet {
+      width: 0;
+    }
+
+    border: 0;
+    border-top: 2px solid rgba(223, 223, 223, 0.2);
+    width: 31%;
+    position: absolute;
+    right: 58%;
+    top: 50%;
+    z-index: 1000;
+  }
+
+  .navbar {
+    @include tablet {
+      width: 65%;
+      padding: 0 0.5rem;
+    }
+
+    @include mobile {
+      animation: cover 0.2s forwards;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      height: 100vh;
+      padding: 1rem 0;
+    }
+
+    animation: cover-down 0.4s forwards;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    padding: 0 4.5rem 0 3rem;
+    background-color: rgba(28, 43, 65, 0.2);
+    backdrop-filter: blur(25px);
+    border-radius: 2px;
+
+    .close-icon {
+      align-self: flex-end;
+      margin: 2rem;
+      cursor: pointer;
+    }
+
+    .navbar-link {
+      display: flex;
+      gap: 0.45rem;
+      font-size: 0.85rem;
+      font-weight: 200;
+      color: $heading-color;
+      letter-spacing: 3px;
+      padding: 2rem 0.3rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 3px solid transparent;
+      transition: border-bottom 0.1s ease-in;
+
+      @include mobile {
+        padding: 0.6rem 1.7rem;
+        font-size: 1.1rem;
+        width: 100%;
+        border-right: 4px solid transparent;
+
+        &:nth-child(2n) {
+          animation: fade-right 0.6s ease-in-out;
+        }
+
+        &:nth-child(2n + 1) {
+          animation: fade-left 0.6s ease-in-out;
+        }
+      }
+
+      .bold {
+        font-weight: 700;
+      }
+
+      &:hover {
+        border-bottom: 3px solid #f3f3f3;
+
+        @include mobile {
+          border-bottom: 3px solid transparent;
+          border-right: 4px solid #f3f3f3;
+        }
+      }
+    }
+  }
+
+  .menu-icon {
+    width: 2rem;
+    margin: 2rem;
+    cursor: pointer;
+  }
+}
+
+.hide {
+  display: none !important;
+}
