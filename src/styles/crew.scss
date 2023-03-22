@@ -1,0 +1,203 @@
+@import "./base";
+
+.crew-page {
+  background: url("../assets/crew/background-crew-desktop.jpg") $bg-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $text-color;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 12% 5% 0 5%;
+
+  @media (max-width: 1160px) {
+    padding: 12% 2% 0 2%;
+  }
+
+  @include tablet {
+    background: url("../assets/crew/background-crew-tablet.jpg") $bg-color;
+  }
+
+  @include mobile {
+    background: url("../assets/crew/background-crew-mobile.jpg") $bg-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h2 {
+    @include heading;
+    animation: fade-up 1s ease-in-out;
+    padding-top: 2rem;
+  }
+
+  .crew {
+    position: absolute;
+    bottom: 0;
+
+    .crew-member {
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      @media (max-width: 1160px) {
+        gap: 0;
+      }
+
+      @include tablet {
+        flex-direction: column;
+        height: unset;
+      }
+
+      .member-info {
+        .role {
+          @media (max-width: 1160px) {
+            font-size: 27px;
+          }
+
+          @include tablet {
+            text-align: center;
+            font-size: 24px;
+            line-height: 28px;
+          }
+
+          @include mobile {
+            font-size: 16px;
+            line-height: 18px;
+          }
+
+          margin-top: 15%;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 37px;
+          text-transform: uppercase;
+          color: $heading-color;
+          animation: fade 1s ease-in-out;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+        }
+
+        .member-name {
+          @media (max-width: 1160px) {
+            font-size: 44px;
+          }
+
+          @include tablet {
+            font-size: 40px;
+            line-height: 46px;
+            text-align: center;
+          }
+
+          @include mobile {
+            font-size: 24px;
+            line-height: 28px;
+          }
+
+          animation: fade-down 1s ease-in-out;
+          padding: 1rem 0;
+          font-family: $ff-secondary;
+          font-weight: 400;
+          font-size: 56px;
+          line-height: 64px;
+          text-transform: uppercase;
+          color: $heading-color;
+        }
+
+        .member-bio {
+          animation: fade-up 1s ease-in-out;
+          font-family: $ff-primary;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          width: 52%;
+
+          @media (max-width: 1160px) {
+            width: 90%;
+            font-size: 17px;
+          }
+
+          @include tablet {
+            width: 100%;
+            padding: 0.5rem 10%;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+          }
+
+          @include mobile {
+            font-size: 15px;
+            line-height: 25px;
+          }
+        }
+      }
+
+      .member-image {
+        @media (max-width: 1160px) {
+          margin-right: 0.2rem;
+        }
+
+        @include tablet {
+          align-self: center;
+        }
+
+        padding: 0;
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin-right: 15%;
+        animation: image-left 1.2s ease-in-out;
+
+        img {
+          height: 40rem;
+          max-width: 36rem;
+          max-height: 50rem;
+
+          @media (max-width: 1160px) {
+            height: 32rem;
+          }
+
+          @include tablet {
+            height: 30rem;
+          }
+
+          @include mobile {
+            height: 22rem;
+          }
+
+          @media (max-height: 670px) {
+            height: 15.5rem;
+          }
+        }
+      }
+    }
+
+    .change-crew-member-dots {
+      position: absolute;
+      bottom: 0.5rem;
+
+      @include tablet {
+        right: 50%;
+        transform: translate(50%);
+      }
+
+      .dot {
+        margin: 0 1.3rem 0 0;
+        font-size: 3.7rem;
+        color: #fff;
+        opacity: 0.2;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+
+      .active-dot {
+        opacity: 1;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -126,6 +126,11 @@
     }
 
     .destination-info {
+      @media (max-width: 1180px) {
+        padding: 1%;
+        gap: 0;
+      }
+
       padding: 3% 1% 3% 12%;
       display: flex;
       width: 100%;
@@ -214,21 +219,21 @@
           display: flex;
           flex-direction: column;
           text-transform: uppercase;
-          gap: 0.6rem;
+          gap: 0.7rem;
 
           .label {
-            font-family: "Barlow Condensed", sans-serif;
-            font-weight: 400;
-            font-size: 14px;
+            font-family: $ff-primary;
+            font-weight: 200;
+            font-size: 0.87rem;
             line-height: 17px;
-            letter-spacing: 2.3625px;
+            letter-spacing: 2.35px;
           }
 
           .data {
             font-family: $ff-secondary;
-            font-weight: 400;
-            font-size: 1.75rem;
-            line-height: 32px;
+            font-weight: 100;
+            font-size: 1.6rem;
+            line-height: 33px;
             text-transform: uppercase;
             color: $heading-color;
           }

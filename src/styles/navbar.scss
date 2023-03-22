@@ -63,8 +63,9 @@ nav {
     align-items: center;
     width: 60%;
     padding: 0 4.5rem 0 3rem;
-    background-color: rgba(28, 43, 65, 0.2);
-    backdrop-filter: blur(25px);
+    background-color: rgba(48, 62, 83, 0.2);
+    backdrop-filter: blur(20px);
+    -moz-backdrop-filter: blur(20px);
     border-radius: 2px;
 
     .close-icon {

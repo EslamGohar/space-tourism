@@ -51,9 +51,11 @@ export const Navbar = () => {
         <img src={logo} alt="space-logo" />
       </Link>
       <div className="separator-line"></div>
-      {/* if (windowWidth > mobileWidth) `links` be shown. 
-          else if (window width <= the mobile width && showMenu) `links` be shown. 
+
+      {/* if (windowWidth > mobileWidth) `links` be shown.
+          else if (window width <= the mobile width && showMenu) `links` be shown.
           else if (window width <= the mobile width && !showMenu) `menuIcon` be shown. */}
+
       {windowWidth > mobileWidth ? links : showMenu ? links : menuIcon}
     </nav>
   );
