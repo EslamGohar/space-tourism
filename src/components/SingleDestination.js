@@ -2,20 +2,20 @@ import "../styles/destination.scss";
 
 export const SingleDestination = ({
   name,
-  image,
+  images,
   description,
   distance,
-  travel: travelTime,
+  travel,
 }) => {
   return (
     <div className="destination">
       {/* the key attributes for rerendering, so they will animate every time state changes */}
       <div className="destination-image" key={Math.random()}>
         {/* <picture>
-          <source srcSet={image.webp} type="image/webp" />
-          <img src={image.png} alt={name} />
+          <source srcSet={images.webp} type="image/webp" />
+          <img src={images.png} alt={name} />
         </picture> */}
-        <img src={image.png} alt={name} />
+        <img src={images.png} alt={name} />
       </div>
       <div className="destination-info" key={Math.random()}>
         <h2>{name}</h2>
@@ -27,7 +27,7 @@ export const SingleDestination = ({
           </div>
           <div className="travel-time">
             <span className="label">est. travel time</span>
-            <span className="data">{travelTime}</span>
+            <span className="data">{travel}</span>
           </div>
         </div>
       </div>

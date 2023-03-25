@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { NavbarLink } from "./Navbar-link";
 import useWindowWidth from "../hooks/useWindowWidth";
 
-import logo from "../assets/shared/logo.svg";
-import iconClose from "../assets/shared/icon-close.svg";
-import iconMenu from "../assets/shared/icon-hamburger.svg";
+import logo from "../static/logo.svg";
+import iconClose from "../static/icon-close.svg";
+import iconMenu from "../static/icon-hamburger.svg";
 import "../styles/navbar.scss";
 
 export const Navbar = () => {
@@ -38,10 +38,18 @@ export const Navbar = () => {
   const links = (
     <div className="navbar">
       {windowWidth < mobileWidth ? closeIcon : ""}
-      <NavbarLink linkNum="00" linkName="home" linkURL="/" />
-      <NavbarLink linkNum="01" linkName="destination" linkURL="/destination" />
-      <NavbarLink linkNum="02" linkName="crew" linkURL="/crew" />
-      <NavbarLink linkNum="03" linkName="technology" linkURL="/technology" />
+      <NavbarLink linkNum="00" linkName="home" linkURL="/space-tourism" />
+      <NavbarLink
+        linkNum="01"
+        linkName="destination"
+        linkURL="/space-tourism/destination"
+      />
+      <NavbarLink linkNum="02" linkName="crew" linkURL="/space-tourism/crew" />
+      <NavbarLink
+        linkNum="03"
+        linkName="technology"
+        linkURL="/space-tourism/technology"
+      />
     </div>
   );
 

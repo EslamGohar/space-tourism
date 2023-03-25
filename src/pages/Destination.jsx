@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import data from "../data/data.json";
-import { SingleDestination } from "../components/SingleDestination";
+import data from "../data.json";
+import { SingleDestination } from "../components";
 import "../styles/destination.scss";
 
 const Destination = () => {

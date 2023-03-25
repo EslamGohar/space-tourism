@@ -1,6 +1,6 @@
 import { useState } from "react";
-import data from "../data/data.json";
-import { CrewMember } from "../components/CrewMember";
+import data from "../data.json";
+import { CrewMember } from "../components";
 import "../styles/crew.scss";
 
 const Crew = () => {

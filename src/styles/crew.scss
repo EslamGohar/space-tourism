@@ -1,7 +1,8 @@
 @import "./base";
 
 .crew-page {
-  background: url("../assets/crew/background-crew-desktop.jpg") $bg-color;
+  background: url("../../public/assets/crew/background-crew-desktop.jpg")
+    $bg-color;
   background-repeat: no-repeat;
   background-size: cover;
   color: $text-color;
@@ -14,11 +15,13 @@
   }
 
   @include tablet {
-    background: url("../assets/crew/background-crew-tablet.jpg") $bg-color;
+    background: url("../../public/assets/crew/background-crew-tablet.jpg")
+      $bg-color;
   }
 
   @include mobile {
-    background: url("../assets/crew/background-crew-mobile.jpg") $bg-color;
+    background: url("../../public/assets/crew/background-crew-mobile.jpg")
+      $bg-color;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -72,9 +75,9 @@
           line-height: 37px;
           text-transform: uppercase;
           color: $heading-color;
-          animation: fade 1s ease-in-out;
           mix-blend-mode: normal;
           opacity: 0.5;
+          animation: fade 1s ease-in-out;
         }
 
         .member-name {
@@ -199,5 +202,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
   }
 }
