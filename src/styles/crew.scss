@@ -1,7 +1,7 @@
 @import "./base";
 
 .crew-page {
-  background: url("../../public/assets/crew/background-crew-desktop.jpg")
+  background: url("/assets/crew/background-crew-desktop.jpg")
     $bg-color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,12 +15,12 @@
   }
 
   @include tablet {
-    background: url("../../public/assets/crew/background-crew-tablet.jpg")
+    background: url("/assets/crew/background-crew-tablet.jpg")
       $bg-color;
   }
 
   @include mobile {
-    background: url("../../public/assets/crew/background-crew-mobile.jpg")
+    background: url("/assets/crew/background-crew-mobile.jpg")
       $bg-color;
     background-repeat: no-repeat;
     background-size: cover;

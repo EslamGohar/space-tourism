@@ -1,7 +1,7 @@
 @import "./base";
 
 .destination-page {
-  background-image: url("../../public/assets/destination/background-destination-desktop.jpg");
+  background-image: url("/assets/destination/background-destination-desktop.jpg");
   background-color: $bg-color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,14 +17,12 @@
   }
 
   @include tablet {
-    background: url("../../public/assets/destination/background-destination-tablet.jpg")
-      $bg-color;
+    background: url("/assets/destination/background-destination-tablet.jpg") $bg-color;
     padding: 14.5% 1% 2% 2%;
   }
 
   @include mobile {
-    background: url("../../public/assets/destination/background-destination-mobile.jpg")
-      no-repeat $bg-color;
+    background: url("/assets/destination/background-destination-mobile.jpg") no-repeat $bg-color;
     background-size: cover;
   }
 
