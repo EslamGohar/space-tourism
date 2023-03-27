@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import useWindowWidth from "../hooks/useWindowWidth";
 import "../styles/navbar.scss";
 
@@ -8,7 +8,7 @@ export const NavbarLink = ({ linkURL, linkNum, linkName }) => {
   const mobileWidth = 480;
 
   return (
-    <Link to={linkURL} className="navbar-link">
+    <NavLink to={linkURL} className="navbar-link active">
       <span
         className={
           windowWidth > tabletWidth || windowWidth < mobileWidth
@@ -19,6 +19,6 @@ export const NavbarLink = ({ linkURL, linkNum, linkName }) => {
         {linkNum}
       </span>
       {linkName}
-    </Link>
+    </NavLink>
   );
 };

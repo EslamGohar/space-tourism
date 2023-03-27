@@ -15,7 +15,7 @@ const Home = () => {
             world experience!
           </p>
         </div>
-        <Link to="/space-tourism/destination">
+        <Link to="/destination">
           <button className="main-btn">Explore</button>
         </Link>
       </div>

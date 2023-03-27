@@ -1,8 +1,8 @@
 @import "./base";
 
 .crew-page {
-  background: url("../../public/assets/crew/background-crew-desktop.jpg")
-    $bg-color;
+  background-image: url("/images/crew/background-crew-desktop.jpg");
+  background-color: $bg-color;
   background-repeat: no-repeat;
   background-size: cover;
   color: $text-color;
@@ -15,13 +15,13 @@
   }
 
   @include tablet {
-    background: url("../../public/assets/crew/background-crew-tablet.jpg")
-      $bg-color;
+    background-image: url("/images/crew/background-crew-tablet.jpg");
+    background-color: $bg-color;
   }
 
   @include mobile {
-    background: url("../../public/assets/crew/background-crew-mobile.jpg")
-      $bg-color;
+    background-image: url("/images/crew/background-crew-mobile.jpg");
+    background-color: $bg-color;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -96,23 +96,23 @@
             line-height: 28px;
           }
 
-          animation: fade-down 1s ease-in-out;
           padding: 1rem 0;
           font-family: $ff-secondary;
           font-weight: 400;
           font-size: 56px;
+          color: $heading-color;
           line-height: 64px;
           text-transform: uppercase;
-          color: $heading-color;
+          animation: fade-down 1s ease-in-out;
         }
 
         .member-bio {
-          animation: fade-up 1s ease-in-out;
           font-family: $ff-primary;
           font-weight: 400;
           font-size: 18px;
-          line-height: 32px;
           width: 52%;
+          line-height: 32px;
+          animation: fade-up 1s ease-in-out;
 
           @media (max-width: 1160px) {
             width: 90%;
@@ -150,9 +150,9 @@
         animation: image-left 1.2s ease-in-out;
 
         img {
-          height: 40rem;
+          height: 32rem;
           max-width: 36rem;
-          max-height: 50rem;
+          max-height: 60rem;
 
           @media (max-width: 1160px) {
             height: 32rem;
@@ -164,10 +164,6 @@
 
           @include mobile {
             height: 22rem;
-          }
-
-          @media (max-height: 670px) {
-            height: 15.5rem;
           }
         }
       }

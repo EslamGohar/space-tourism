@@ -38,18 +38,10 @@ export const Navbar = () => {
   const links = (
     <div className="navbar">
       {windowWidth < mobileWidth ? closeIcon : ""}
-      <NavbarLink linkNum="00" linkName="home" linkURL="/space-tourism" />
-      <NavbarLink
-        linkNum="01"
-        linkName="destination"
-        linkURL="/space-tourism/destination"
-      />
-      <NavbarLink linkNum="02" linkName="crew" linkURL="/space-tourism/crew" />
-      <NavbarLink
-        linkNum="03"
-        linkName="technology"
-        linkURL="/space-tourism/technology"
-      />
+      <NavbarLink linkNum="00" linkName="home" linkURL="/" />
+      <NavbarLink linkNum="01" linkName="destination" linkURL="/destination" />
+      <NavbarLink linkNum="02" linkName="crew" linkURL="/crew" />
+      <NavbarLink linkNum="03" linkName="technology" linkURL="/technology" />
     </div>
   );
 
@@ -61,8 +53,9 @@ export const Navbar = () => {
       <div className="separator-line"></div>
 
       {/* if (windowWidth > mobileWidth) `links` be shown.
-          else if (window width <= the mobile width && showMenu) `links` be shown.
-          else if (window width <= the mobile width && !showMenu) `menuIcon` be shown. */}
+          else if (windowWidth <= mobileWidth && showMenu) `links` be shown.
+          else if (windowWidth <= mobileWidth && !showMenu) `menuIcon` be shown. 
+      */}
 
       {windowWidth > mobileWidth ? links : showMenu ? links : menuIcon}
     </nav>

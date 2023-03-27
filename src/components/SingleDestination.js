@@ -1,5 +1,4 @@
 import "../styles/destination.scss";
-
 export const SingleDestination = ({
   name,
   images,
@@ -11,10 +10,6 @@ export const SingleDestination = ({
     <div className="destination">
       {/* the key attributes for rerendering, so they will animate every time state changes */}
       <div className="destination-image" key={Math.random()}>
-        {/* <picture>
-          <source srcSet={images.webp} type="image/webp" />
-          <img src={images.png} alt={name} />
-        </picture> */}
         <img src={images.png} alt={name} />
       </div>
       <div className="destination-info" key={Math.random()}>

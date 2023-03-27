@@ -1,4 +1,4 @@
-export const CrewMember = ({ id, name, images, role, bio }) => {
+export const CrewMember = ({ name, images, role, bio }) => {
   return (
     <div className="crew-member" key={Math.random()}>
       <div className="member-info">
