@@ -169,7 +169,7 @@
 
     .change-crew-member-dots {
       position: absolute;
-      bottom: 0.5rem;
+      bottom: 0.4rem;
 
       @include tablet {
         right: 50%;
@@ -178,7 +178,7 @@
 
       .dot {
         margin: 0 1.3rem 0 0;
-        font-size: 3.7rem;
+        font-size: 4rem;
         color: #fff;
         opacity: 0.2;
         cursor: pointer;
