@@ -31,7 +31,7 @@ Users should be able to:
 
 ![iPad Screenshot](./src/static/screenshots/Screenshot-iPad.png)
 
-![Desktop Screenshot](./src/static/screenshots/Screenshot-laptop.png)
+![Desktop Screenshot](./src/static/screenshots/Screenshot-desktop.png)
 
 ### Links
 
