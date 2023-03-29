@@ -20,6 +20,7 @@ const Crew = () => {
       </h2>
       <div className="crew">
         <CrewMember {...currentMember} />
+
         <div className="change-crew-member-dots">
           <span
             className={currentMember.id === "0" ? "dot active-dot" : "dot"}

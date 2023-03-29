@@ -10,6 +10,7 @@ export const SingleTechnology = ({
 
   return (
     <div className="technology">
+      {/* the key attribute for rerendering, so they will animate every time state changes */}
       <div className="technology-info" key={Math.random()}>
         <p className="terminology-text">The terminology...</p>
         <h2>{name}</h2>

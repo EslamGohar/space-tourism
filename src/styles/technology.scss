@@ -1,7 +1,7 @@
 @import "./base";
 
 .technology-page {
-  background-image: url("/images/technology/background-technology-desktop.jpg");
+  background-image: url("../static/wallpapers/technology/background-technology-desktop.jpg");
   background-color: $bg-color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,13 +14,13 @@
   }
 
   @include tablet {
-    background-image: url("/images/technology/background-technology-tablet.jpg");
+    background-image: url("../static/wallpapers/technology/background-technology-tablet.jpg");
     background-color: $bg-color;
     padding: 14% 0 1% 0;
   }
 
   @include mobile {
-    background-image: url("/images/technology/background-technology-mobile.jpg");
+    background-image: url("../static/wallpapers/technology/background-technology-mobile.jpg");
     background-color: $bg-color;
     background-repeat: no-repeat;
     background-size: cover;

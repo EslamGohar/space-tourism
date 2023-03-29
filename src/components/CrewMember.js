@@ -7,11 +7,7 @@ export const CrewMember = ({ name, images, role, bio }) => {
         <div className="member-bio">{bio}</div>
       </div>
       <div className="member-image">
-        <img
-          src={images.png}
-          alt={name}
-          //  style={{ height: id === "0" ? "46rem" : "" }}
-        />
+        <img src={images.png} alt={name} />
       </div>
     </div>
   );

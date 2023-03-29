@@ -1,7 +1,7 @@
 @import "./base";
 
 .crew-page {
-  background-image: url("/images/crew/background-crew-desktop.jpg");
+  background-image: url("../static/wallpapers/crew/background-crew-desktop.jpg");
   background-color: $bg-color;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,12 +15,12 @@
   }
 
   @include tablet {
-    background-image: url("/images/crew/background-crew-tablet.jpg");
+    background-image: url("../static/wallpapers/crew/background-crew-tablet.jpg");
     background-color: $bg-color;
   }
 
   @include mobile {
-    background-image: url("/images/crew/background-crew-mobile.jpg");
+    background-image: url("../static/wallpapers/crew/background-crew-mobile.jpg");
     background-color: $bg-color;
   }
 
@@ -75,7 +75,7 @@
           color: $heading-color;
           mix-blend-mode: normal;
           opacity: 0.5;
-          animation: fade 1s ease-in-out;
+          animation: fade 1.2s ease-in-out;
         }
 
         .member-name {
@@ -205,5 +205,6 @@
     transform: translateY(-10px);
   }
   to {
+    opacity: 1;
   }
 }

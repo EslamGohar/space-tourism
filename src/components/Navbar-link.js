@@ -8,7 +8,13 @@ export const NavbarLink = ({ linkURL, linkNum, linkName }) => {
   const mobileWidth = 480;
 
   return (
-    <NavLink to={linkURL} className="navbar-link active">
+    <NavLink
+      to={linkURL}
+      className={`
+        navbar-link
+        ${({ isActive }) => (isActive ? "active" : "")}
+      `}
+    >
       <span
         className={
           windowWidth > tabletWidth || windowWidth < mobileWidth
